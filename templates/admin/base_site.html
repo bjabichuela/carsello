@@ -1,0 +1,75 @@
+{% extends 'admin/base.html' %} 
+
+{% load static %} 
+
+{% block branding %}
+<link rel="shorcut icon" type="image/png" href="{% static 'img/logos/logo.png' %}" />
+<h3 id="head">
+  <img
+    src="{% static 'img/logos/logo.png' %}"
+    alt="Car Shop"
+    height="50"
+    width="auto"
+    class="brand_img"
+  />
+</h3>
+{% endblock %} 
+{% block extrahead %}
+<link rel="stylesheet" href="{% static 'css/admin.css' %}" />
+<style>
+  /* VARIABLE DEFINITIONS */
+  :root {
+    --primary: #0B0909;
+    --secondary: #44444C;
+    --accent: #D6D6D6;
+    --primary-fg: #fff;
+
+    --body-fg: #333;
+    --body-bg: #F3F5F9;
+    --body-quiet-color: #666;
+    --body-loud-color: #000;
+
+    --header-color: #D6D6D6;
+    --header-branding-color: var(--accent);
+    --header-bg: var(--secondary);
+    --header-link-color: var(--primary-fg);
+
+    --breadcrumbs-fg: #4E4F50;
+    --breadcrumbs-link-fg: var(--body-fg);
+    --breadcrumbs-bg: var(--primary);
+
+    --link-fg: #44444C;
+    --link-hover-color: #8C8C8C;
+    --link-selected-fg: #CED6CA;
+
+    --hairline-color: #D6D6D6;
+    --border-color: #4E4F50;
+
+    --error-fg: #F36870;
+
+    --message-success-bg: #BCECE0;
+    --message-warning-bg: #FFBF90;
+    --message-error-bg: #F36870;
+
+    --darkened-bg: #D6D6D6; /* A bit darker than --body-bg */
+    --selected-bg: #8C8C8C; /* E.g. selected table cells */
+    --selected-row: #D6D6D6;
+
+    --button-fg: #fff;
+    --button-bg: var(--primary);
+    --button-hover-bg: #8C8C8C;
+    --default-button-bg: var(--secondary);
+    --default-button-hover-bg: #8C8C8C;
+    --close-button-bg: #888; /* Previously #bbb, contrast 1.92 */
+    --close-button-hover-bg: #747474;
+    --delete-button-bg: #ba2121;
+    --delete-button-hover-bg: #a41515;
+
+    --object-tools-fg: var(--button-fg);
+    --object-tools-bg: var(--close-button-bg);
+    --object-tools-hover-bg: var(--close-button-hover-bg);
+  }
+</style>
+
+
+{% endblock %}
