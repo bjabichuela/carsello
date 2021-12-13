@@ -1,6 +1,7 @@
 html, body {
     height: 100%;
     font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
 }
 
 a {
@@ -3296,7 +3297,7 @@ input[type=checkbox]:checked + label:before {
     line-height: 40px;
     display: inline-block;
     margin: 2px;
-    border-radius: 3px;
+    border-radius: 50%;
     text-align: center;
     background: rgba(0,0,0,0.5);
 }
@@ -3947,7 +3948,7 @@ footer {
     padding: 20px 0;
     text-align: center;
     margin-bottom: 0;
-    background: #202c54;
+    background: #0B0909;
     color: #fff;
 }
 
