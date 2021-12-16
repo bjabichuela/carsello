@@ -1134,7 +1134,7 @@ input[type=checkbox]:checked + label:before {
 }
 
 .banner h3 {
-    color: #fff;
+    color: #FBE5C8;
     margin-bottom: 20px;
     font-size: 50px;
     font-weight: 700;
@@ -1143,8 +1143,9 @@ input[type=checkbox]:checked + label:before {
 }
 
 .banner h5{
-    color: #fff;
+    color: #FBE5C8;
     margin-bottom: 25px;
+    margin-right: 2rem;
     font-size: 20px;
     font-weight: 300;
     line-height: 33px;
@@ -6069,7 +6070,7 @@ footer {
 
 /** Sub Banner start **/
 .sub-banner {
-    background: rgba(0, 0, 0, 0.04) url(../img/car-1.jpg) top left repeat;
+    background: rgba(0, 0, 0, 0.04) url(../img/car-6.jpg) top left repeat;
     background-size: cover;
     height: 360px;
     background-position: center center;
@@ -9274,10 +9275,6 @@ table {
     .compare-table tr td {
         box-sizing: border-box;
         padding: 10px 7px;
-    }
-
-    footer {
-        padding-top: 60px;
     }
 
     .dashboard-content {

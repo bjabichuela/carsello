@@ -336,7 +336,7 @@ input[type=checkbox]:checked + label:before {
 }
 
 .intro-section {
-    background: #0B0909;
+    background:#0B0909;
 }
 
 .search-button:hover {
