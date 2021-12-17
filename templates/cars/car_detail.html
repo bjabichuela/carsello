@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 
+{% block title %} Cars | {{single_car.car_title}} {% endblock %}
 {% load humanize %}
 {% load static %}
 
@@ -261,9 +262,6 @@
                                   <div class="row">
                                     <div class="col">
                                       <input type="text" name="city" class="form-control" placeholder="City" required>
-                                    </div>
-                                    <div class="col">
-                                      <input type="text" name="state" class="form-control" placeholder="State" required>
                                     </div>
                                   </div>
                                 </div>
