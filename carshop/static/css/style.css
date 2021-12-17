@@ -6,7 +6,7 @@ html, body {
 
 a {
     cursor: pointer;
-    color: #4d4d4d;
+    color: white;
 }
 
 a:hover {
@@ -39,7 +39,7 @@ ul {
     margin: 0;
     padding: 0;
     list-style: none;
-    color: #535353;
+    color: white;
 }
 
 .btn.focus, .btn:focus {
@@ -482,6 +482,7 @@ input[type=checkbox]:checked + label:before {
     font-weight: 300;
 }
 
+
 .advanced-search ul {
     padding: 0;
     margin: 0;
@@ -490,7 +491,7 @@ input[type=checkbox]:checked + label:before {
 .advanced-search ul li {
     list-style: none;
     padding: 5px 0;
-    color: #787878;
+    color: white;
     font-size: 15px;
     line-height: 30px!important;
     border-bottom: 1px dotted #DDD;
@@ -505,7 +506,7 @@ input[type=checkbox]:checked + label:before {
 .advanced-search ul span {
     font-weight: 500;
     float: left;
-    color: #474646;
+    color: white;
 }
 
 .as-2{
@@ -3277,6 +3278,7 @@ input[type=checkbox]:checked + label:before {
 
 .team-1 .photo img{
     width: 100%;
+    border-radius: 50%;
 }
 
 .team-1 .social-list {
@@ -4234,7 +4236,7 @@ footer {
     text-align: center;
     display: inline-block;
     font-size: 16px;
-    border-radius: 3px;
+    border-radius: 50%;
     color: #fff;
     margin: 0 4px 2px 0;
 }
@@ -5072,14 +5074,14 @@ footer {
     outline: 0;
     height: 45px;
     border-radius: 3px;
-    border: 1px solid #dbdbdb;
+    border: 2px solid gray;
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .06);
 }
 
 .contact-2 .form-control:focus {
     color: #495057;
     background-color: transparent;
-    border: 1px solid #dbdbdb;
+    border: 1px solid black;
     outline: 0;
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .06);
 }
@@ -5824,6 +5826,7 @@ footer {
 .widget {
     padding: 30px 20px;
     border-bottom: solid 1px #efefef;
+    background: #4E545C;
 }
 
 .widget-2 {
@@ -5837,6 +5840,7 @@ footer {
 
 .widget-3 {
     border-bottom: none;
+    margin-top: 1rem;
 }
 
 .single-block {
@@ -5848,7 +5852,7 @@ footer {
     position: relative;
     margin: 0 0 25px;
     font-weight: 400;
-    color: #212121;
+    color: white !important;
 }
 
 .sidebar .search-box {
@@ -5980,7 +5984,7 @@ footer {
     width: 40%;
     margin-right: -8px;
     font-size: 13px;
-    color: #535353;
+    color: white;
     font-weight: 500;
     margin-top: 15px;
 }
@@ -5991,7 +5995,7 @@ footer {
     text-align: right;
     margin-right: -8px;
     font-size: 13px;
-    color: #535353;
+    color: white;
     font-weight: 500;
     margin-top: 15px;
 }
@@ -6051,8 +6055,10 @@ footer {
     top: 25%;
     right: 10%;
     z-index: 1;
-    background: #fff;
+    background: #4E545C;
     border-radius: 10px;
+    opacity: 0.8;
+    color: white;
 }
 
 .search-box-4 .search-fields {
@@ -9027,7 +9033,7 @@ table {
     }
 
     .main-header .company-logo img {
-        height: 40px;
+        height: 30px;
     }
 
     .main-header .company-logo-2 img {
@@ -9724,7 +9730,7 @@ table {
 
 input, input::-webkit-input-placeholder, textarea::-webkit-input-placeholder{
     font-size: 14px;
-    color: #c6c4c4 !important;
+    color: black;
 }
 .form-control:disabled, .form-control[readonly]{
     font-size: 14px;

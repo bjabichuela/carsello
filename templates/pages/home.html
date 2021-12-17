@@ -72,7 +72,7 @@
                 </div>
                 <div class="form-group">
                     <select class="form-control search-fields" name="body_style">
-                        <option selected="true" disabled="disabled">Select Type Of Car</option>
+                        <option selected="true" disabled="disabled">Car Body Style</option>
                         {% for body_style in body_style_search %}
                           <option value="{{body_style}}">{{body_style}}</option>
                         {% endfor %}
@@ -125,7 +125,7 @@
                             <a href="{% url 'car_detail' car.id %}" class="car-img">
                                 <div class="tag-2">Featured</div>
                                 <div class="price-box">
-                                    <span>${{car.price | intcomma}}</span>
+                                    <span>Php. {{car.price | intcomma}}</span>
                                 </div>
                                 <img class="d-block w-100" src="{{car.car_photo.url}}" alt="car" style="min-height: 262px; max-height: 262px;">
                             </a>
@@ -164,10 +164,10 @@
                         </div>
                         <div class="detail">
                             <h1 class="title">
-                                <a href="{% url 'car_detail' car.id %}">{{ car.car_title }}</a>
+                                <a class="text-dark" href="{% url 'car_detail' car.id %}">{{ car.car_title }}</a>
                             </h1>
                             <div class="location">
-                                <a href="{% url 'car_detail' car.id %}">
+                                <a class="text-dark" href="{% url 'car_detail' car.id %}">
                                     <i class="flaticon-pin"></i>{{car.city}}
                                 </a>
                             </div>
@@ -267,7 +267,7 @@
                     </div>
                     <div class="detail">
                         <h1 class="title">
-                            <a href="{% url 'car_detail' car.id %}">{{car.car_title}}</a>
+                            <a class="text-dark" href="{% url 'car_detail' car.id %}">{{car.car_title}}</a>
                         </h1>
                         <div class="location">
                             <a href="{% url 'car_detail' car.id %}">
@@ -280,7 +280,7 @@
                             <p class="cartype">{{car.body_style}}</p>
                         </div>
                         <div class="pull-right">
-                            <p class="price">$ {{car.price | intcomma}}</p>
+                            <p class="price">Php. {{car.price | intcomma}}</p>
                         </div>
                     </div>
                 </div>
@@ -298,7 +298,7 @@
     <div class="container">
         <!-- Main title -->
         <div class="main-title">
-            <h1>Executive <span>Team</span></h1>
+            <h1>Sales <span>Team</span></h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
         </div>
         <!-- Slick slider area start -->
