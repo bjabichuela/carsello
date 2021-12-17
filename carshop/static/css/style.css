@@ -1732,7 +1732,7 @@ input[type=checkbox]:checked + label:before {
 }
 
 .sb-7 .button-theme {
-    background: #000;
+    background: #f0151f;
 }
 
 .sb-7 .button-theme:hover {
@@ -5511,7 +5511,8 @@ footer {
     max-width: 600px;
     margin: 0 auto;
     padding: 30px;
-    background: #fff;
+    background: white;
+    border: 1px solid gray;
     border-radius: 5px;
     box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
 }
@@ -5647,7 +5648,7 @@ footer {
     color: #717171;
     height: 50px;
     border-radius: 3px;
-    border: 1px solid #dbdbdb;
+    border: 1px solid gray;
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .06);
 }
 
