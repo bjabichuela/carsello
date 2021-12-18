@@ -152,3 +152,9 @@ MEDIA_URL = '/media/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 SITE_ID=1
+
+
+try:
+    from .local_settings import *
+except ImportError:
+    pass
