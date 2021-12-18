@@ -92,9 +92,9 @@ WSGI_APPLICATION = 'carshop.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'carshopdb',
-        'USER': 'admin',
-        'PASSWORD': '1234',
+        'NAME': 'carsello_prod',
+        'USER': 'dbadmin',
+        'PASSWORD': 'abc123!',
         'HOST': 'localhost',
     }
 }
