@@ -93,8 +93,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'carshopdb',
-        'USER': 'postgres',
-        'PASSWORD': '8435',
+        'USER': 'admin',
+        'PASSWORD': '1234',
         'HOST': 'localhost',
     }
 }
