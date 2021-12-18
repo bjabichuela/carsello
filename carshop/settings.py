@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-bfa8)wy%b@4@(=ci@00m))7eu_!&&rz!isxbg^1o0$+s_)50_n
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['147.182.167.163', '127.0.0.1', 'localhost', ]
+ALLOWED_HOSTS = ['192.241.129.226', '127.0.0.1', 'localhost', ]
 
 LOGIN_REDIRECT_URL = 'dashboard'
 
@@ -92,9 +92,9 @@ WSGI_APPLICATION = 'carshop.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'carsello_prod',
-        'USER': 'dbadmin',
-        'PASSWORD': 'abc123!',
+        'NAME': 'carshopdb',
+        'USER': 'admin',
+        'PASSWORD': '8435',
         'HOST': 'localhost',
     }
 }
@@ -153,6 +153,11 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 SITE_ID=1
 
+# Messages
+from django.contrib.messages import constants as messages
+MESSAGE_TAGS = {
+    messages.ERROR: 'danger',
+}
 
 try:
     from .local_settings import *

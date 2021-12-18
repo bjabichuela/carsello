@@ -1,10 +1,8 @@
 {% extends 'base.html' %}
-
-{% block title %} | Home {% endblock %}
-{% block content %}
-
 {% load humanize %}
 {% load static %}
+{% block title %} | Home {% endblock %}
+{% block content %}
 <!-- Banner start -->
 
 <div class="banner" id="banner">
@@ -173,12 +171,12 @@
                                 </a>
                             </div>
                             <ul class="facilities-list clearfix">
-                                <li>{{car.fuel_type}}</li>
-                                <li>{{car.miles | intcomma}} km</li>
-                                <li>{{car.transmission}}</li>
-                                <li>{{car.body_style}}</li>
-                                <li>{{car.color}}</li>
-                                <li>{{car.year}}</li>
+                                <li class="text-dark">{{car.fuel_type}}</li>
+                                <li class="text-dark">{{car.miles | intcomma}} km</li>
+                                <li class="text-dark">{{car.transmission}}</li>
+                                <li class="text-dark">{{car.body_style}}</li>
+                                <li class="text-dark">{{car.color}}</li>
+                                <li class="text-dark">{{car.year}}</li>
                             </ul>
                         </div>
                     </div>

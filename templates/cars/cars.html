@@ -1,9 +1,10 @@
 {% extends 'base.html' %}
 
-{% block title %} | Our Cars {% endblock %}
-{% block content %}
-
 {% load humanize %}
+
+{% block title %} | Our Cars {% endblock %}
+
+{% block content %}
 <!-- Sub banner start -->
 <div class="sub-banner overview-bgi">
     <div class="container breadcrumb-area">
@@ -80,12 +81,12 @@
                                     </a>
                                 </div>
                                 <ul class="facilities-list clearfix">
-                                    <li>{{car.fuel_type}}</li>
-                                    <li>{{car.miles | intcomma }} km</li>
-                                    <li>{{car.transmission}}</li>
-                                    <li>{{car.body_style}}</li>
-                                    <li>{{car.color}}</li>
-                                    <li>{{car.year}}</li>
+                                    <li class="text-dark">{{car.fuel_type}}</li>
+                                    <li class="text-dark">{{car.miles | intcomma }} km</li>
+                                    <li class="text-dark">{{car.transmission}}</li>
+                                    <li class="text-dark">{{car.body_style}}</li>
+                                    <li class="text-dark">{{car.color}}</li>
+                                    <li class="text-dark">{{car.year}}</li>
                                 </ul>
                             </div>
                         </div>
