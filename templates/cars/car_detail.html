@@ -28,7 +28,8 @@
                 <div class="car-details-section">
                     <!-- Heading start -->
                     <div class="heading-car clearfix">
-                        <div class="pull-left">
+                        {% include 'partials/messages.html'%}
+                        <div class="pull-left mt-3">
                             <h3>{{single_car.car_title}}</h3>
                             <h6>
                                 <i class="flaticon-pin"></i>{{single_car.city}}
@@ -221,7 +222,7 @@
                             </button>
                           </div>
                           <div class="modal-body">
-                            <form action="{% url 'home' %}" method="POST">
+                            <form action="{% url 'inquiry' %}" method="POST">
                               {% csrf_token %}
 
                               {% if user.is_authenticated %}
@@ -292,17 +293,19 @@
                       </div>
                     </div>
                     <!-- Question start -->
-                    <div class="widget question">
-                        <h5 class="sidebar-title">Get a Question?</h5>
-                        <ul class="contact-info">
-                            <li>
+                    <div class="question text-dark">
+                        <ul class="contact-info text-dark mt-4">
+                            <li class="text-dark">
+                                <h5>Got a question?</h5>
+                            </li>
+                            <li class="text-dark">
                                 <i class="flaticon-pin"></i>2700 Guatemala, Makati City
                             </li>
                             <li>
-                                <i class="flaticon-mail"></i><a href="mailto:inquiry@carsello.com">inquiry@carsello.com</a>
+                                <i class="flaticon-mail"></i><a class="text-dark" href="mailto:inquiry@carsello.com">inquiry@carsello.com</a>
                             </li>
                             <li>
-                                <i class="flaticon-phone"></i><a href="tel:(02)-7777-xxxxx">+(02)-7777-xxxxx</a>
+                                <i class="flaticon-phone"></i><a class="text-dark" href="tel:(02)-7777-xxxxx">+(02)-7777-xxxxx</a>
                             </li>
                         </ul>
                         <div class="social-list clearfix">

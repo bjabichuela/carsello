@@ -481,5 +481,5 @@ $(function () {
 })(jQuery);
 
 setTimeout(function() {
-    $('#message').fadeout('slow');
+    $(`#message`).fadeout('slow');
 }, 3000)
